@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin     : 0;
+  padding    : 0;
+}
+
+header {
+  background-color: rgb(57, 25, 236);
+  color           : #fff;
+  padding         : 20px;
+}
+
+
+h1 {
+  position          : relative;
+  padding           : 0;
+  margin            : 0;
+  font-family       : "Raleway", sans-serif;
+  font-weight       : 300;
+  font-size         : 40px;
+  color             : #180852;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition     : all 0.4s ease 0s;
+  transition        : all 0.4s ease 0s;
+
+}
+
+h1 span {
+  display    : block;
+  font-size  : 0.5em;
+  line-height: 1.3;
+}
+
+.title h1 {
+  font-size     : 26px;
+  font-weight   : 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width         : 160px;
+  text-align    : center;
+  margin        : auto;
+  white-space   : nowrap;
+  padding-bottom: 13px;
+}
+
+.title h1:before {
+  background-color: #570a17;
+  content         : '';
+  display         : block;
+  height          : 3px;
+  width           : 85px;
+  margin-bottom   : 5px;
+}
+
+.title h1:after {
+  background-color: #570a17;
+  content         : '';
+  display         : block;
+  position        : absolute;
+  right           : 0;
+  bottom          : 0;
+  height          : 3px;
+  width           : 85px;
+  margin-bottom   : 0.25em;
+}
+
+
+.container {
+  max-width: 800px;
+  margin   : 0px auto;
+  padding  : 20px;
+  background-color: rgb(116, 129, 241);
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+textarea {
+  width        : 50%;
+  height       : 100px;
+  padding      : 10px;
+  font-size    : 16px;
+  border       : 1px solid #ccc;
+  border-radius: 4px;
+  resize       : vertical;
+}
+
+textarea:focus {
+  border : 2px solid #007bff;
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #999;
+}
+
+.flex {
+  display: flex;
+
+}
+
+a {
+  text-decoration: none;
+  color          : rgb(235, 159, 159);
+}
+
+a:hover {
+  color: gray;
+
+}
+
+
+.btn {
+  border          : none;
+  display         : inline-block;
+  text-align      : center;
+  cursor          : pointer;
+  text-transform  : uppercase;
+  outline         : none;
+  overflow        : hidden;
+  position        : relative;
+  color           : rgb(255, 255, 255);
+  font-weight     : 500;
+  font-size       : 10px;
+  background-color: rgb(34, 34, 34);
+  padding         : 10px 10px;
+  box-shadow      : rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border-radius   : 10%;
+}
+
+.btn:hover {
+  background: none;
+}
+
+.btn span {
+  position: relative;
+  z-index : 1;
+}
+
+.btn::after {
+  content   : "";
+  position  : absolute;
+  left      : 0px;
+  top       : 0px;
+  height    : 300%;
+  width     : 100%;
+  background: rgb(120, 199, 210);
+  transition: all 0.5s ease-in-out 0s;
+  transform : translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover::after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.ml {
+  padding-left: 100px;
+}
+
+.box {
+  background :transparent;
+  font-family: Montserrat, sans-serif;
+  ;
+  font-size  : 24px;
+  line-height: 30px;
+  font-weight: bold;
+
+  padding    : 40px;
+  box-shadow :
+    inset #000296 0 0 0 5px,
+    inset #05149c 0 0 0 1px,
+    inset #1c0cab 0 0 0 10px,
+    inset #1f63bd 0 0 0 11px,
+    inset #8cabff 0 0 0 16px,
+    inset #486ce4 0 0 0 17px,
+    inset #e5eaf9 0 0 0 21px,
+    inset #bfc0f7 0 0 0 22px;
+  text-shadow: 3px 3px 1px #c7bff7;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  section {
+    display: block;
+  }
+  td{
+    display: block;
+    width: 100%;
+  }
+   .profile{
+    display: block;
+   }
+   img{
+        width: 350px;
+   }
+}
